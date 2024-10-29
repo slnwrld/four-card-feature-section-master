@@ -1,0 +1,16 @@
+:root{
+    --clr-red:hsl(0, 78%, 62%);
+    --clr-cyan:hsl(180, 62%, 55%);
+    --clr-orange:hsl(34, 97%, 64%);
+    --clr-blue:hsl(212, 86%, 64%);
+    --clr-dark-blue:hsl(234, 12%, 34%);
+    --clr-grey-blue:hsl(229, 6%, 66%);
+    --clr-light-grey:hsl(0, 0%, 98%);
+    --ff-pop: "Poppins", sans-serif; /*200, 400, 600*/
+    --fs-15px: 0.94rem;
+}
+
+
+
+.attribution { font-size: 0.69rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
