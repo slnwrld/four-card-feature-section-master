@@ -1,16 +1,108 @@
-:root{
-    --clr-red:hsl(0, 78%, 62%);
-    --clr-cyan:hsl(180, 62%, 55%);
-    --clr-orange:hsl(34, 97%, 64%);
-    --clr-blue:hsl(212, 86%, 64%);
-    --clr-dark-blue:hsl(234, 12%, 34%);
-    --clr-grey-blue:hsl(229, 6%, 66%);
-    --clr-light-grey:hsl(0, 0%, 98%);
-    --ff-pop: "Poppins", sans-serif; /*200, 400, 600*/
-    --fs-15px: 0.94rem;
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-dark-blue: hsl(234, 12%, 34%);
+  --clr-grey-blue: hsl(229, 6%, 66%);
+  --clr-light-grey: hsl(0, 0%, 98%);
+  --clr-white: hsl(0, 0%, 100%);
+  --ff-pop: "Poppins", sans-serif; /*200, 400, 600*/
+  --fs-15px: 0.94rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-pop);
+  background-color: var(--clr-light-grey);
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 10px 5px 10px;
+}
+
+h1,
+h2 {
+  color: var(--clr-dark-blue);
+}
+
+p {
+  color: var(--clr-grey-blue);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 75px;
+  max-width: 31.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  & span {
+    font-weight: 400;
+  }
+}
+
+main{
+    display: grid;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: var(--clr-white);
+  max-width: 25rem;
+  margin-bottom: 20px;
+  padding: 21px 30px;
+  box-shadow: 2px 10px 20px -10px var(--clr-grey-blue);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+  font-size: var(--fs-15px);
+  &.supervisor {
+    border-top: 4px solid var(--clr-cyan);
+  }
+  &.team-builder {
+    border-top: 4px solid var(--clr-red);
+  }
+
+  &.karma {
+    border-top: 4px solid var(--clr-orange);
+  }
+
+  &.calculator {
+    border-top: 4px solid var(--clr-blue);
+  }
+  & img {
+  display: block;
+  align-self: flex-end;
+    }
+}
+
+.text h2 {
+  font-weight: 600;
+  margin-bottom: 9px;
 }
 
 
-
-.attribution { font-size: 0.69rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  margin-top: 10px;
+  font-size: 0.69rem;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
